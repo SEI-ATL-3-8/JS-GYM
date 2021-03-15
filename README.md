@@ -6,7 +6,7 @@
 
 Open each problems folder and you will see a file for each problem. The prompt for each problem is commented at the top of each file.
 
-In order to check your solution open your VSCode terminal and type node [file-name] and you will see the output of your function!. Plug in the sample input and console.log your function (remember to invoke the function inside of the console.log to see your answer in the terminal!)
+In order to check your solution, update the source of the script tag in your html to the js file in the problems folder. Open the index live server and you should see your js code in the console.
 
 recommended order:
 1. countToNum
