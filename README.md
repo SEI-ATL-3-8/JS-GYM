@@ -25,3 +25,6 @@ recommended order:
 
 ## got through all of these? 
 If you're feeling good checkout the problems in the extras folder! 
+
+## Writing Tests? 
+![test image](./testImg.jpg)
