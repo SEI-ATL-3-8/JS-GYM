@@ -19,3 +19,16 @@ output: 3
 
 if the action parameter is not filled return "action needed!"
 */
+
+const calculator = (action, num1, num2) => {
+    switch(action) {
+        case 'add' : return num1 + num2
+        break;
+        case 'subtract': return num1 - num2
+        break;
+        case 'multiply': return num1 * num2
+        break;
+        case 'divide': return num1 / num2
+    }
+}
+

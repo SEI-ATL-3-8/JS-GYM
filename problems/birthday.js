@@ -20,3 +20,16 @@ let myFriends = {
         birthday: "August 16"
     }
 }
+
+let birthdayGreet = (name) => {
+    if(myFriends[name]) {
+        console.log(`Hi my name is ${name} and my birthday is ${myFriends[name].birthday}`)
+        return (`Hi my name is ${name} and my birthday is ${myFriends[name].birthday}`)
+    } else {
+        console.log('this person does not exist')
+        return ('this person does not exist')
+    }
+}
+
+birthdayGreet('ryan')
+birthdayGreet('bob')

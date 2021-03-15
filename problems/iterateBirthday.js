@@ -16,7 +16,7 @@ myFriends = {
 }
 */
 
-let myFriends = {
+let myFriendsBirthdays = {
     "bob": {
         age: 24,
         birthday: "June 8"
@@ -30,3 +30,12 @@ let myFriends = {
         birthday: "August 16"
     }
 }
+
+let iterateBirthdays = (obj) => {
+    let arr = []
+    for(let person in obj) {
+        arr.push(`hi my ${person} is and my birthday is ${obj[person].birthday}`)
+    }
+    return arr
+}
+console.log(iterateBirthdays(myFriendsBirthdays))

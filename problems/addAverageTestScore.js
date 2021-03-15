@@ -49,3 +49,20 @@ let myFriendsScores = {
         testScores: [87,89,99,81]
     }
 }
+
+let createAverages = (object) => {
+    for(let person in object) {
+        // console.log(object[person])
+        let scores = object[person].testScores
+        let totalScore = 0
+        for(let i = 0; i < scores.length; i++) {
+            totalScore += scores[i]
+        }
+        totalScore = totalScore/scores.length
+        object[person].average = totalScore
+    }
+    console.log(object)
+    return object
+}
+
+createAverages(myFriendsScores)
