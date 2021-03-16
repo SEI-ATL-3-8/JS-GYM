@@ -49,3 +49,18 @@ let myFriendsScores = {
         testScores: [87,89,99,81]
     }
 }
+
+function addAverageTestScore(obj) {
+    for(let person in obj) {
+        let average = 0
+        for(let n of obj[person].testScores) {
+            average += n
+        }
+        average /= obj[person].testScores.length
+        obj[person]['average'] = average
+        // console.log(obj[person].average)
+    }
+    return obj
+}
+
+// console.log(addAverageTestScore(myFriendsScores))

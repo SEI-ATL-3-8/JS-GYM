@@ -19,3 +19,17 @@ output: 3
 
 if the action parameter is not filled return "action needed!"
 */
+
+function calculator(str, num1, num2) {
+    if(str === 'add') {
+        return num1 + num2
+    } else if(str === 'subtract') {
+        return num1 - num2
+    } else if(str === 'multiply') {
+        return num1 * num2
+    } else if(str === 'divide') {
+        return num1 / num2
+    }
+}
+
+// console.log(calculator('add', 2, 3))

@@ -6,3 +6,21 @@ case 3: if the number is divisible by just 5 then that number should be replaced
 example input: 20
 example output: [0,1,2,"fizz",4,"buzz","fizz",7,8,"fizz","buzz",11,12,13,14,"fizzbuzz",16,17,18,19,"buzz"]
 */
+
+function fizzBuzz(num) {
+    let arr = []
+    for(let i = 0; i <= num; i++){
+        if(i % 3 === 0 && i % 5 === 0 && i > 0) {
+            arr.push('fizzbuzz')
+        } else if(i % 3 === 0 && i > 0) {
+            arr.push('fizz')
+        } else if(i % 5 === 0 && i > 0) {
+            arr.push('buzz')
+        } else {
+            arr.push(i)
+        }
+    }
+    return arr
+}
+
+// console.log(fizzBuzz(20))

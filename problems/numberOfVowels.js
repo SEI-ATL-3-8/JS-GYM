@@ -3,3 +3,21 @@
 example input: "apple"
 example output: "2"
 */
+const vowels = ['a','e','i','o','u']
+
+function numberOfVowels(str) {
+    let numVowels = 0
+    let strArr = str.split('')
+
+    for(let letter of strArr) {
+        for(let v of vowels){
+            // console.log(v)
+            if(letter === v){
+                numVowels++
+            }
+        }
+    }
+    return numVowels
+}
+
+// console.log(numberOfVowels('apple'))
