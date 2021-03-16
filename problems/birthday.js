@@ -20,3 +20,15 @@ let myFriends = {
         birthday: "August 16"
     }
 }
+
+function birthday(str) {
+    for(let key in myFriends) {
+        if(key === str) {
+            return `hi my name is ${key} and my birthday is ${myFriends[key].birthday}`
+        } else {
+            return 'this person does not exist'
+        }
+    }
+}
+
+// console.log(birthday('bob'))

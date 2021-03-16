@@ -1,4 +1,4 @@
-/* Given this object, write a function that iterates through the object and logs  "hi my name is [name] and my birthday is [birthday]".
+/* Given this object, write a function that iterates through the object and logs  "hi my name is [name] and my birthday is [birthday]" for each person.
 
 myFriends = {
     "bob": {
@@ -16,7 +16,7 @@ myFriends = {
 }
 */
 
-let myFriends = {
+let myFriendsBDays = {
     "bob": {
         age: 24,
         birthday: "June 8"
@@ -30,3 +30,11 @@ let myFriends = {
         birthday: "August 16"
     }
 }
+
+function iterateBirthday(obj) {
+    for(let friend in obj) {
+        console.log(`hi my name is ${friend} and my birthday is ${obj[friend]['birthday']}`)
+    }
+}
+
+// console.log(iterateBirthday(myFriendsBDays))
